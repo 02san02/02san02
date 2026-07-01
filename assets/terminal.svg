@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="404" viewBox="0 0 860 404" font-family="ui-monospace, 'SFMono-Regular', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" role="img" aria-label="Terminal: Sanskar shipping an LLM eval and agentic pipeline">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#171836"/>
+      <stop offset="1" stop-color="#0F1024"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="88%" cy="8%" r="60%">
+      <stop offset="0" stop-color="#FFC371" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#FFC371" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- window -->
+  <rect x="1" y="1" width="858" height="402" rx="13" fill="url(#bg)" stroke="#FFC371" stroke-opacity="0.14"/>
+  <rect x="1" y="1" width="858" height="402" rx="13" fill="url(#glow)"/>
+  <!-- title bar -->
+  <path d="M1 14 A13 13 0 0 1 14 1 H846 A13 13 0 0 1 859 14 V46 H1 Z" fill="#20224a"/>
+  <line x1="1" y1="46" x2="859" y2="46" stroke="#000" stroke-opacity="0.25"/>
+  <circle cx="26" cy="24" r="6.5" fill="#DE6262"/>
+  <circle cx="48" cy="24" r="6.5" fill="#FFC371"/>
+  <circle cx="70" cy="24" r="6.5" fill="#7EC8E3"/>
+  <text x="430" y="29" text-anchor="middle" font-size="13" fill="#FFF5E1" fill-opacity="0.55" letter-spacing="0.5">sanskar@ai-prod : ~/llm-systems</text>
+
+  <!-- body -->
+  <g font-size="14.5" letter-spacing="0.2">
+    <!-- l1 prompt -->
+    <text x="24" y="84">
+      <tspan fill="#FFC371">sanskar</tspan><tspan fill="#8890c8">@ai-prod</tspan><tspan fill="#8890c8">:</tspan><tspan fill="#7EC8E3">~/llm-systems</tspan><tspan fill="#FFC371">$</tspan><tspan fill="#FFF5E1"> python </tspan><tspan fill="#FFD98E">eval.py --suite rag-golden --judge llm</tspan>
+    </text>
+    <text x="24" y="110"><tspan fill="#DE6262">»</tspan><tspan fill="#FFF5E1" fill-opacity="0.82"> loading golden set </tspan><tspan fill="#4a4f7a">............</tspan><tspan fill="#FFF5E1" fill-opacity="0.82"> 128 cases</tspan></text>
+    <text x="24" y="136"><tspan fill="#6FCF97">✓</tspan><tspan fill="#FFF5E1" fill-opacity="0.9"> hybrid retrieval + cross-encoder rerank</tspan></text>
+    <text x="24" y="162"><tspan fill="#6FCF97">✓</tspan><tspan fill="#FFF5E1" fill-opacity="0.9"> llm-as-judge (confidence-weighted) </tspan><tspan fill="#4a4f7a">....</tspan><tspan fill="#FFC371"> pass</tspan></text>
+    <text x="24" y="188"><tspan fill="#6FCF97">✓</tspan><tspan fill="#FFF5E1" fill-opacity="0.9"> regression gate </tspan><tspan fill="#4a4f7a">................</tspan><tspan fill="#FFC371"> 0 regressions</tspan></text>
+    <!-- l6 prompt -->
+    <text x="24" y="222">
+      <tspan fill="#FFC371">sanskar</tspan><tspan fill="#8890c8">@ai-prod</tspan><tspan fill="#8890c8">:</tspan><tspan fill="#7EC8E3">~/llm-systems</tspan><tspan fill="#FFC371">$</tspan><tspan fill="#FFF5E1"> langgraph run </tspan><tspan fill="#FFD98E">sop_pipeline</tspan>
+    </text>
+    <text x="24" y="248"><tspan fill="#DE6262">»</tspan><tspan fill="#FFF5E1" fill-opacity="0.82"> planner → extractor → synthesizer → critic</tspan></text>
+    <text x="24" y="274"><tspan fill="#6FCF97">✓</tspan><tspan fill="#FFF5E1" fill-opacity="0.9"> pydantic structured output </tspan><tspan fill="#4a4f7a">.........</tspan><tspan fill="#FFC371"> valid</tspan></text>
+    <text x="24" y="300"><tspan fill="#6FCF97">✓</tspan><tspan fill="#FFF5E1" fill-opacity="0.9"> voice eval: pickup + conversion matched human</tspan></text>
+    <!-- l11 prompt -->
+    <text x="24" y="334">
+      <tspan fill="#FFC371">sanskar</tspan><tspan fill="#8890c8">@ai-prod</tspan><tspan fill="#8890c8">:</tspan><tspan fill="#7EC8E3">~/llm-systems</tspan><tspan fill="#FFC371">$</tspan><tspan fill="#FFF5E1"> deploy </tspan><tspan fill="#FFD98E">--env prod</tspan>
+    </text>
+    <text x="24" y="360"><tspan fill="#6FCF97">✓</tspan><tspan fill="#FFF5E1" fill-opacity="0.95"> deployed to production </tspan><tspan fill="#FFC371" font-weight="600">▉<animate attributeName="fill-opacity" values="1;1;0;0" dur="1.05s" repeatCount="indefinite"/></tspan></text>
+  </g>
+</svg>
